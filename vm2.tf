@@ -22,7 +22,7 @@ resource "azurerm_virtual_machine" "web2" {
  os_profile {
         computer_name  = "davidweb2"
         admin_username = "azureuser"
-        admin_password = "PassW0rd1!"
+        admin_password = "PassW***"
 	custom_data= file("web.sh")
     }
 
