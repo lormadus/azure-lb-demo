@@ -4,4 +4,4 @@ resource "azurerm_lb_backend_address_pool" "david-bpepool" {
     name = "david-BackEndAddressPool"
 }
 
-## 이 파일은 VMSS 설정시에만 
+## 이 파일은 VMSS 설정시에만 사용
