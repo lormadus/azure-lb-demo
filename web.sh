@@ -5,6 +5,8 @@ apt-get update –y
 apt-get install apache2 -y
 
 #CentOS, RHEL 사용하시는 경우
+#yum update -y 
+#yum install apache2 -y
 
 ## CDN 설정
 ## Azure 에서 CDN을 사용하는 경우 일반적으로 Azure blob을 사용합니다.
