@@ -8,3 +8,5 @@ resource "azurerm_lb_nat_pool" "lbnatpool" {
     backend_port = 22
     frontend_ip_configuration_name = "davidPublicIPAddress"
 }
+
+## VMSS 설정 하는 경우 사용
