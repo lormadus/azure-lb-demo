@@ -3,7 +3,7 @@ resource "azurerm_virtual_machine" "web2" {
     location              = azurerm_resource_group.david-rg.location
     resource_group_name   = azurerm_resource_group.david-rg.name
     availability_set_id   = azurerm_availability_set.avset.id
-    network_interface_ids = ["${azurerm_network_interface.nic2.id}"]
+    network_interface_ids = [azurerm_network_interface.nic2.id]
     vm_size               = "Standard_DS1_v2"
 
     storage_os_disk {
@@ -35,7 +35,7 @@ resource "azurerm_virtual_machine" "web2" {
     }
     boot_diagnostics {
         enabled     = "true"
-        storage_uri = "${azurerm_storage_account.mystorageaccount.primary_blob_endpoint}"
+        storage_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
     }
 
     tags = {
