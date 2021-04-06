@@ -4,6 +4,7 @@
 #Ubuntu 사용하시는 경우
 apt-get update -y
 apt-get install -y apache2
+service apache2 start
 
 #CentOS, RHEL 사용하시는 경우
 #yum update –y
