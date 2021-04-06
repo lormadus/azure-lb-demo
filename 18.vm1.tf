@@ -22,8 +22,8 @@ resource "azurerm_virtual_machine" "web1" {
  os_profile {
         computer_name  = "davidweb1"
         admin_username = "azureuser"    ## 아래 34번 라인의 계정이름과 동일해야 함
-        admin_password = "Pass****"
-	custom_data= file("web.sh")
+        admin_password = "Pass****"     ## 12자리이상, 특수문자, 숫자, 대문자 조합으로 생성 필요
+	custom_data= file("web.sh")     ## Terraform 실행하는 서버에 존재해야 함, 실행은 만들어지는 VM에서
     }
 
  os_profile_linux_config {
