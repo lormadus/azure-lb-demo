@@ -16,3 +16,10 @@ Azure LB 생성 순서
 12. Storage Account 생성(Diagnostic log 저장용)
 13. Availability Set 생성(LB에 VM을 연결하려면, VM들은 반드시 AS설정 필요!)
 14. VM1, VM2 생성
+
+# Resource Group 생성
+Azure Resource 그룹 생성시에 Region 설정 필요
+Azure CLI에서 아래 명령어로 Region Code확인 가능 
+az account list-locations
+
+
