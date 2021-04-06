@@ -13,4 +13,6 @@ Azure LB 생성 순서
 9. NIC과 LB NAT Rule 연결
 10. RSA Key생성(ssh-keygen 명령어)
 11. 사용자 데이터 부분에서 실행할 스트립트 생성(web.sh)
-12. VM1, VM2 생성
+12. Storage Account 생성(Diagnostic log 저장용)
+13. Availability Set 생성(LB에 VM을 연결하려면, VM들은 반드시 AS설정 필요!)
+14. VM1, VM2 생성
