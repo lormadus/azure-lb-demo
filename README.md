@@ -28,6 +28,8 @@ RSA키는 아래 명령어로 생성 가능 <br>
 ```
 ssh-keygen
 ```
+ssh-keygen을 실행하면 아래 두 파일이 생성됨 <br>
+
 개인키 : id_rsa <br>
 공개키 : id_rsa.pub <br>
 
