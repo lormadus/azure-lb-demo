@@ -27,7 +27,7 @@ ssh-keygen 명령어로 생성 <br>
 개인키 : id_rsa <br>
 공개키 : id_rsa.pub <br>
 
-
+```
 david@user30-admin:~$ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/david/.ssh/id_rsa):
@@ -49,3 +49,4 @@ The key's randomart image is:
 | . o + o        o|
 |  ..+   .       .|
 +----[SHA256]-----+
+```
