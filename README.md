@@ -75,7 +75,7 @@ ssh -i ~/.ssh/id_rsa myadmin@IP -p 50001
 ```
 
 예를 들어 부하분산 장치에 연결된 서버의 NAT Rule이 아래와 같다면  
-<img src="https://github.com/lormadus/azure-lb-demo/blob/master/img/lb_natrule.png" width=500>
+<img src="https://github.com/lormadus/azure-lb-demo/blob/master/img/lb_natrule.png" width=1000>
 
 # 최종 결과물 확인
 부하 분상장치의 공인IP주소를 웹 브라우저에서 확인해 보시면 됩니다.
