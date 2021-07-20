@@ -23,7 +23,7 @@ Azure CLI에서 아래 명령어로 Region Code확인 가능
 ### az account list-locations
 
 # 리소스 생성
-확장자 `*.tf 파일을 작성 후    
+확장자 *.tf 파일을 작성 후    
 ```
 terraform init
 terraform plan
