@@ -68,14 +68,16 @@ The key's randomart image is:
 
 # 서버 접속 
 VM 생성 후 서버 접속은 NAT Rule에 설정한 것처럼 부하분산장치의 공인IP주소와 NAT설정된 포트로 접속하면됩니다. <br>
-ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br>
+ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br><br<
 
-```
-ssh -i ~/.ssh/id_rsa myadmin@IP -p 50001 
-```
-
-예를 들어 부하분산 장치에 연결된 서버의 NAT Rule이 아래와 같다면  
+예를 들어 부하분산 장치에 연결된 서버의 NAT Rule이 아래와 같다면  <br>
 <img src="https://github.com/lormadus/azure-lb-demo/blob/master/img/lb_natrule.png" width=1000>
+<br>
+첫 번째 서버는 아래와 같이 접속 가능합니다.
+```
+ssh -i ~/.ssh/id_rsa myadmin@52.231.72.45 -p 50001 
+```
+
 
 # 최종 결과물 확인
 부하 분상장치의 공인IP주소를 웹 브라우저에서 확인해 보시면 됩니다.
