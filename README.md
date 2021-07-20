@@ -22,6 +22,15 @@ Azure Resource 그룹 생성시에 Region 설정 필요
 Azure CLI에서 아래 명령어로 Region Code확인 가능 
 ### az account list-locations
 
+# 리소스 생성
+확장자 `*.tf 파일을 작성 후    
+```
+terraform init
+terraform plan
+terraform apply
+```
+를 순서대로 진행
+
 # SSH RSA Key 생성
 리눅스 서버로 SSH 접속을 위해서는 1)"계정/패스워드"로 접속하거나, 2)"계정/SSH RSA Key"로 접속해야 하는데, 
 RSA키는 아래 명령어로 생성 가능 <br>
