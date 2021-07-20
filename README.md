@@ -56,3 +56,11 @@ The key's randomart image is:
 |  ..+   .       .|
 +----[SHA256]-----+
 ```
+
+# 서버 접속 
+VM 생성 후 서버 접속은 NAT Rule에 설정한 것처럼 부하분산장치의 공인IP주소와 NAT설정된 포트로 접속하면됩니다. <br>
+ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br>
+
+```
+ssh -i ~/.ssh/id_rsa myadmin@IP -p 50001 
+```
