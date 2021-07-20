@@ -26,3 +26,26 @@ Azure CLI에서 아래 명령어로 Region Code확인 가능
 ssh-keygen 명령어로 생성 <br>
 개인키 : id_rsa <br>
 공개키 : id_rsa.pub <br>
+
+
+david@user30-admin:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/david/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/david/.ssh/id_rsa
+Your public key has been saved in /home/david/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Y1vHochgw+sP6pXiCGBRsFWqZLiB0rFod/5Unv21+YE david@user30-admin
+The key's randomart image is:
++---[RSA 3072]----+
+| .oo..           |
+|oo+o..           |
+|**oo .=  .  .    |
+|=o+ o. =o.oo .   |
+|oo   ...Soo.o  . |
+|o    .oo + .. o o|
+|.   . =..    E + |
+| . o + o        o|
+|  ..+   .       .|
++----[SHA256]-----+
