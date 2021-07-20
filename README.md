@@ -22,4 +22,7 @@ Azure Resource 그룹 생성시에 Region 설정 필요
 Azure CLI에서 아래 명령어로 Region Code확인 가능 
 ### az account list-locations
 
-
+### SSH RSA Key 생성
+ssh-keygen 명령어로 생성 
+개인키 : id_rsa
+공개키 : id_rsa.pub
