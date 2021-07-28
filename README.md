@@ -35,7 +35,7 @@ terraform apply
 리눅스 서버로 SSH 접속을 위해서는 1)"계정/패스워드"로 접속하거나, 2)"계정/SSH RSA Key"로 접속해야 하는데, 
 RSA키는 아래 명령어로 생성 가능 <br>
 ```
-ssh-keygen
+ssh-keygen -t rsa -b 4096 -m PEM
 ```
 ssh-keygen을 실행하면 아래 두 파일이 생성됨 <br>
 
