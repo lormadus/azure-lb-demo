@@ -124,7 +124,7 @@ ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br><br>
 <br><br>
 첫 번째 서버는 아래와 같이 접속 가능합니다.<br>
 ```
-ssh -i ~/.ssh/id_rsa azureuser@52.231.72.45 -p 50001 
+ssh -i ~/.ssh/id_rsa azureuser@XXX.XXX.XXX.XXX -p 50001 
 ```
 
 
