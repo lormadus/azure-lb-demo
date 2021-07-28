@@ -127,6 +127,9 @@ ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br><br>
 ssh -i ~/.ssh/id_rsa azureuser@XXX.XXX.XXX.XXX -p 50001 
 ```
 
+# Jenkins 서버를 통한 배포시 SSH 서버 등록
+<img src="https://github.com/lormadus/azure-lb-demo/blob/master/jenkins_ssh_configulation.png" width=1000>
+<br><br>
 
 # 최종 결과물 확인
 부하 분상장치의 공인IP주소를 웹 브라우저에서 확인해 보시면 됩니다.
