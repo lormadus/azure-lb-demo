@@ -23,7 +23,7 @@ Terraform 작업 서버에 접속 후 Azure CLI 설치
 ```
 sudo su -
 apt-get update -y
-apt-get install azure-cli
+apt-get install azure-cli -y
 ```
 
 Azure CLI 로그인 후 구독ID, 테넌트 ID 확인   
