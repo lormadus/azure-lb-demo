@@ -30,6 +30,8 @@ Azure CLI 로그인 후 구독ID, 테넌트 ID 확인
 ```
 az login
 ```
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/az_login.png" width=1000>
+<br><br>
 구독이 여러개 인 경우 사용할 구독 선택    
 ```
 az account set --subscription="SUBSCRIPTION_ID"
@@ -39,24 +41,34 @@ Client ID, Client Secret을 생성하기 위한 Service Principle 생성
 ```
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
 ```
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/create_sp.png" width=1000>
+<br><br>
 
-<Azure 인증을 위한 변수 등록>   
+<Azure 인증을 위한 변수 등록>    
 ```
 export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000" 
 export ARM_CLIENT_SECRET="00000000-0000-0000-0000-000000000000" 
 export ARM_SUBSCRIPTION_ID="00000000-0000-0000-0000-000000000000" 
 export ARM_TENANT_ID="00000000-0000-0000-0000-000000000000"
 ```
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/export_variables.png" width=1000>
+<br><br>
 
 <테라폼 설치>    
 ```
-wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_amd64.zip
+wget https://releases.hashicorp.com/terraform/1.0.4/terraform_1.0.4_linux_amd64.zip
 ```
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/terraform_download.png" width=1000>
+<br><br>
+
 테라폼 압축을 풀기 위해 unzip 패키지 설치   
 ```
 apt install unzip 
-unzip terraform_1.0.3_linux_amd64.zip
+unzip terraform_1.0.4_linux_amd64.zip
 ```
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/install_unzip.png" width=1000>
+<br><br>
+
 테라폼 파일을 /bin 으로 복사
 ```
 cp terraform /bin
@@ -65,10 +77,12 @@ cp terraform /bin
 ```
 terraform version
 ```
-
+<img src="https://github.com/lormadus/azure-vmss/blob/master/img/terraform_copy_to_bin.png" width=1000>
+<br><br>
 # Resource Group 생성
 Azure Resource 그룹 생성시에 Region 설정 필요
-Azure CLI에서 아래 명령어로 Region Code확인 가능 
+Azure CLI에서 아래 명령어로 Region Code확인 가능     
+
 ```
 az account list-locations
 ```
