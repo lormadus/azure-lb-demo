@@ -121,6 +121,17 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
+# web.sh 파일 생성    
+```
+#!/bin/bash
+
+(Ubuntu 혹은 CentOS 한가지만 선택, 나머지는 주석처리)
+#Ubuntu 사용하시는 경우
+apt-get update -y
+apt-get install -y apache2
+service apache2 start
+```
+
 # 리소스 생성
 확장자 *.tf 파일을 작성 후    
 ```
