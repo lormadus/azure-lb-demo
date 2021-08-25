@@ -154,6 +154,9 @@ ssh -i <RSA파일> 사용자명@IP주소 -p 포트주소 <br><br>
 ssh -i ~/.ssh/id_rsa azureuser@XXX.XXX.XXX.XXX -p 50001 
 ```
 
+# Jenkins 서버 설정 
+[설정 참고자료](https://github.com/lormadus/azure-lb-demo/blob/master/Jenkins%20%EB%B0%B0%ED%8F%AC%20%EC%B0%B8%EA%B3%A0%20%EC%9E%90%EB%A3%8C_v3.pdf)
+
 # Jenkins 서버를 통한 배포시 SSH 서버 등록
 <img src="https://github.com/lormadus/azure-lb-demo/blob/master/jenkins_ssh_configulation.png" width=1000>
 <br><br>
