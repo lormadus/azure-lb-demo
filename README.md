@@ -86,16 +86,6 @@ Azure CLI에서 아래 명령어로 Region Code확인 가능
 ```
 az account list-locations
 ```
-
-# 리소스 생성
-확장자 *.tf 파일을 작성 후    
-```
-terraform init
-terraform plan
-terraform apply
-```
-를 순서대로 진행
-
 # SSH RSA Key 생성
 리눅스 서버로 SSH 접속을 위해서는 1)"계정/패스워드"로 접속하거나, 2)"계정/SSH RSA Key"로 접속해야 하는데, 
 RSA키는 아래 명령어로 생성 가능 <br>
@@ -130,6 +120,16 @@ The key's randomart image is:
 |  ..+   .       .|
 +----[SHA256]-----+
 ```
+
+# 리소스 생성
+확장자 *.tf 파일을 작성 후    
+```
+terraform init
+terraform plan
+terraform apply
+```
+를 순서대로 진행
+
 
 # 서버 접속 
 VM 생성 후 서버 접속은 NAT Rule에 설정한 것처럼 부하분산장치의 공인IP주소와 NAT설정된 포트로 접속하면됩니다. <br><br>
