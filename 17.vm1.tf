@@ -30,7 +30,7 @@ resource "azurerm_virtual_machine" "web1" {
  os_profile_linux_config {
         disable_password_authentication = false
         ssh_keys {
-	    ## ssh-keygen 명령어를 통해 Private Key(id_rsa)와 Public Key(id_rsa.pub)파일 생성
+	    ## ssh-keygen -t rsa -b 4096 -m PEM   명령어를 통해 Private Key(id_rsa)와 Public Key(id_rsa.pub)파일 생성
             ## 서버 접근을 위해 관리 서버에서 생성한 id_rsa.pub 파일을 가상서버로 복사
             path     = "/home/azureuser/.ssh/authorized_keys"   ## 가상 서버에 복사되는 위치
 	    ## id_rsa.pub 파일 내용을 아래 key_data에 넣어줌 (무조건 한줄로!!!)
