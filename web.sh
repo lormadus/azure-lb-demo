@@ -5,6 +5,7 @@
 apt-get update -y
 apt-get install -y apache2
 service apache2 start
+chmod -R 777 /var/www
 
 #CentOS, RHEL 사용하시는 경우
 #yum update –y
