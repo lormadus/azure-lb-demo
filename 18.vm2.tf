@@ -27,6 +27,8 @@ resource "azurerm_virtual_machine" "web2" {
 	custom_data= file("web.sh")
     }
 
+## ssh-keygen -t rsa -b 4096 -m PEM   명령어를 통해 Private Key(id_rsa)와 Public Key(id_rsa.pub)파일 생성
+	
  os_profile_linux_config {
         disable_password_authentication = false
         ssh_keys {
