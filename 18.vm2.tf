@@ -27,13 +27,14 @@ resource "azurerm_virtual_machine" "web2" {
 	custom_data= file("web.sh")
     }
 
-## ssh-keygen -t rsa -b 4096 -m PEM   명령어를 통해 Private Key(id_rsa)와 Public Key(id_rsa.pub)파일 생성
-	
- os_profile_linux_config {
+os_profile_linux_config {
         disable_password_authentication = false
         ssh_keys {
-           path     = "/home/azureuser/.ssh/authorized_keys"
-           key_data = file("~/.ssh/id_rsa.pub")
+	    ## ssh-keygen -t rsa -b 4096 -m PEM   명령어를 통해 Private Key(id_rsa)와 Public Key(id_rsa.pub)파일 생성
+            ## 서버 접근을 위해 관리 서버에서 생성한 id_rsa.pub 파일을 가상서버로 복사
+            path     = "/home/azureuser/.ssh/authorized_keys"   ## 가상 서버에 복사되는 위치
+	    ## id_rsa.pub 파일 내용을 아래 key_data에 넣어줌 (무조건 한줄로!!!)
+            key_data = file("~/.ssh/id_rsa.pub")
         }
     }
     boot_diagnostics {
@@ -45,4 +46,3 @@ resource "azurerm_virtual_machine" "web2" {
         environment = "Terraform Demo"
     }
 }
-
