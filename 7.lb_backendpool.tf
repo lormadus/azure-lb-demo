@@ -1,4 +1,4 @@
-resource "azurerm_lb_backend_address_pool" "david-bepool" {
-    loadbalancer_id = azurerm_lb.david-lb.id
-    name = "david-BackEndAddressPool"
+resource "azurerm_lb_backend_address_pool" "user20-bep" {
+    loadbalancer_id = azurerm_lb.user20-lb.id
+    name = "user20-bep"
 }
