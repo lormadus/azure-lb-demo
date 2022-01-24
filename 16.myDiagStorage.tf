@@ -1,7 +1,7 @@
-resource "azurerm_storage_account" "mystorageaccount" {
-    name                = "davidvm1diagestorage1"
-    resource_group_name = azurerm_resource_group.david-rg.name
-    location = azurerm_resource_group.david-rg.location
+resource "azurerm_storage_account" "user20-diag-storage" {
+    name                = "user20-diag-storage"
+    resource_group_name = azurerm_resource_group.user20-rg.name
+    location = azurerm_resource_group.user20-rg.location
     account_replication_type = "LRS"
     account_tier = "Standard"
 
@@ -9,4 +9,3 @@ resource "azurerm_storage_account" "mystorageaccount" {
         environment = "Terraform Demo"
     }
 }
-
