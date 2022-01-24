@@ -28,5 +28,5 @@ resource "azurerm_network_interface_backend_address_pool_association" "backendPo
 resource "azurerm_network_interface_nat_rule_association" "natrule2" {
   network_interface_id  = azurerm_network_interface.web2-nic1.id
   ip_configuration_name = "web2-nic1-ip"
-  nat_rule_id           = azurerm_lb_nat_rule.natrule1.id
+  nat_rule_id           = azurerm_lb_nat_rule.natrule2.id
 }
