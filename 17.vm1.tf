@@ -4,7 +4,7 @@ resource "azurerm_virtual_machine" "web1" {
     resource_group_name   = azurerm_resource_group.user20-rg.name
     availability_set_id   = azurerm_availability_set.avset.id
     delete_os_disk_on_termination    = true
-    network_interface_ids = [azurerm_network_interface.nic1.id]
+    network_interface_ids = [azurerm_network_interface.web1-nic1.id]
     vm_size               = "Standard_DS1_v2"
 
     storage_os_disk {
